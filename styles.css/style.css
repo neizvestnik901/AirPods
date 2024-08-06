@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.nav__container {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+    background: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.nav__left{
+    display: flex;
+    align-items: center;
+}
+.header__nav_list{
+    display: flex;
+    gap: 30px;
+}
+.header__logo{
+    padding-right: 30px;
+}
+
+.header__nav_link {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
+.header__content {
+    background: url(../images/Header.jpg) no-repeat center /cover;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+}
+
+.header__content_text {
+    font-family: 'Prosto';
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 75%;
+    color: #fff;
+}
+
+.header__content_link {
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    background: #fff;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #171718;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main {
+    background: #151515;
+}
+
+.main__section_1,
+.main__section_2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding-top: 30px;
+}
+
+.main__section_left_text,
+.main__section_right_text {
+
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 22px;
+    color: #fff;
+}
+
+.main__section_left_img {
+    margin-bottom: 50px;
+}
+
+.main__section_3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.main__section_img_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-top: 50px;
+}
+
+.main__section_img_center::before {
+    content: '';
+    display: block;
+    width: 61px;
+    height: 1px;
+    background: #c4c4c4;
+
+
+}
+
+.main__section_img_center::after {
+    content: '';
+    display: block;
+    width: 61px;
+    height: 1px;
+    background: #c4c4c4;
+}
+
+.main__section_3_left_text {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    padding-right: 10xp;
+}
+
+.main__section_3_right_text {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.main__section_4 {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 55px;
+}
+
+.main__section_4_box {
+    border-radius: 6px;
+    width: 255px;
+    height: 312px;
+    background: #fff;
+}
+
+.products__item_text {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.products__item_top_photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products__item_top_text {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.products__item_top_content {
+    display: flex;
+    justify-content: center;
+}
+
+.products__item_top_link {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #fff;
+    width: 161px;
+    height: 34px;
+    background: #151515;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    box-shadow: 0 -4px 20px 0 rgba(0, 0, 0, 0.25);
+    background: #282828;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.footer__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+.footer__list_link{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 20px;
+    text-align: right;
+    color: #fff;
+}
+.footer__list{
+    display: flex;
+    gap: 30px;
+}
+@media (max-width:1090px){
+    .main__section_4{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:900px) {
+    .section_img,
+    .section_3_img{
+        height: 250px;
+    }
+}
+@media (max-width:680px) {
+    .header__content_text{
+        font-size: 70px;
+    }
+    .header__content{
+        height: 400px;
+    }
+    .main__section_left_text,
+    .main__section_right_text{
+        font-size: 19px;
+    }
+    .main__section_3_right_text,
+    .main__section_3_left_text {
+        font-size: 15px;
+    }
+    @media (max-width:610px){
+        .section_img,
+        .section_3_img{
+            height: 150px;
+        }
+    }
+    @media (max-width:500px){
+        .main__section_1{
+            flex-direction: column;
+        }
+        .header__content_text{
+            font-size: 50px;
+        }
+        .footer__content{
+            flex-direction: column;
+            gap: 40px;
+        }
+        .main__section_3_right_text,
+        .main__section_3_left_text {
+            padding-top: 30px;
+            font-size: 13px;
+        }
+        .main__section_img_center::after,
+        .main__section_img_center::before{
+            width: 30px;
+        }
+        .nav__container{
+            flex-direction: column;
+        }
+    }
+}
+@media (max-width:400px){
+    .main__section_3_right_text,
+    .main__section_3_left_text {
+        font-size: 10px;
+    }
+    .main__section_img_center::after,
+    .main__section_img_center::before{
+        width: 10px;
+    }
+    .main__section_left_text,
+    .main__section_right_text{
+        font-size: 15px;
+    }
+    .header__content_text{
+        font-size: 40px;
+    }
+    .header__nav_link{
+        font-size: 15px;
+    }
+    .header__content{
+        height: 300px;
+    }
+}
